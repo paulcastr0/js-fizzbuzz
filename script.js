@@ -1,14 +1,16 @@
-for (let i = 0; i <= 100; i++) {
+let mainContainer = document.querySelector(".my-container");
+
+for (let i = 0; i <= 1000; i++) {
 
     if ((i % 3 == 0) && (i % 5 == 0)) {
-    console.log(i+". FizzBuzz")
+        mainContainer.innerHTML += '<div class ="square"><p>FizzBuzz</p></div>';
     }
     else if (i  % 3 == 0) {
-    console.log(i+". Fizz")
+        mainContainer.innerHTML += '<div class ="square"><p>Fizz</p></div>';
     }
     else if (i % 5 == 0) {
-    console.log(i+". Buzz")
+        mainContainer.innerHTML += '<div class ="square"><p>Buzz</p></div>';
     }
 
-    else  console.log(i)
+    mainContainer.innerHTML += '<div class ="square">' + i + '</p></div>';
 }
