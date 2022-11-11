@@ -1,6 +1,6 @@
 let mainContainer = document.querySelector(".my-container");
 
-for (let i = 0; i <= 1000; i++) {
+for (let i = 0; i <= 100; i++) {
 
     if ((i % 3 == 0) && (i % 5 == 0)) {
         mainContainer.innerHTML += '<div class ="square"><p>FizzBuzz</p></div>';
@@ -11,6 +11,7 @@ for (let i = 0; i <= 1000; i++) {
     else if (i % 5 == 0) {
         mainContainer.innerHTML += '<div class ="square"><p>Buzz</p></div>';
     }
+    else
 
     mainContainer.innerHTML += '<div class ="square">' + i + '</p></div>';
 }
